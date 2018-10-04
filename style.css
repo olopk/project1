@@ -6,6 +6,7 @@
 body{
     background-image: url("img/background.jpg");
     background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .header-container{
@@ -14,6 +15,21 @@ body{
     justify-content: center;
     margin-top: 5vh;
 }
-.header-container__img{
+.header-container img{
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
+.main-container{
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    max-height: 1370px;
+}
+.form-template{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
