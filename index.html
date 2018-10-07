@@ -14,34 +14,149 @@
         <img src="img/logo.png" alt="logo" class="header-container__img">
         <img src="img/brand_name.png" alt="logo" class="header-container__img">
     </header>
-    <div class="main-container">
+    <section class="main-container">
         <div class="form-template">
             <h1 class="form-template__header">Register form</h1>
             <div class="form-template__wrapper">
-                <div class="form-template__element">
-                    <div class="form-template__icon"><i class="fas fa-user"></i></div>
-                    <input class="form-template__field" type="text" placeholder="Name" name="Name" required >
-                </div>
-                <div class="form-template__element">
-                    <div class="form-template__icon"><i class="fas fa-lock"></i></div>
-                    <input class="form-template__field" type="text" placeholder="Name" name="Name" required >
-                </div>
-                <div class="form-template__element">
-                    <div class="form-template__icon"><i class="fas fa-lock"></i></div>
-                    <input class="form-template__field" type="text" placeholder="Name" name="Name" required >
-                </div>
-                <div class="form-template__element">
-                    <div class="form-template__icon"><i class="fas fa-envelope"></i></div>
-                    <input class="form-template__field" type="text" placeholder="Name" name="Name" required >
-                </div>
-                <div class="form-template__element">
-                    <div class="form-template__icon"><i class="fas fa-map-marker"></i></div>
-                    <input class="form-template__field" type="text" placeholder="Name" name="Name" required >
-                </div>
-                
+                <form class="form-template__main">
+                    <div class="form-template__element">
+                        <div class="form-template__icon"><i class="fas fa-user"></i></div>
+                        <div class="form-template__separator"></div>
+                        <input class="form-template__field" type="text" placeholder="Username" name="name" required >
+                    </div>
+                    <div class="form-template__element">
+                        <div class="form-template__icon"><i class="fas fa-lock"></i></div>
+                        <div class="form-template__separator"></div>
+                        <input class="form-template__field" type="text" placeholder="Password" name="pass" required >
+                    </div>
+                    <div class="form-template__element">
+                        <div class="form-template__icon"><i class="fas fa-lock"></i></div>
+                        <div class="form-template__separator"></div>
+                        <input class="form-template__field" type="text" placeholder="Confirm password" name="cpass" required >
+                    </div>
+                    <div class="form-template__element">
+                        <div class="form-template__icon"><i class="fas fa-envelope"></i></div>
+                        <div class="form-template__separator"></div>
+                        <input class="form-template__field" type="text" placeholder="Email" name="email" required >
+                    </div>
+                    <div class="form-template__element">
+                        <div class="form-template__icon form-template__icon-location"><i class="fas fa-map-marker"></i></div>
+                        <div class="form-template__separator"></div>
+                        <select class="form-template__field form-template__field-location" type="text"  name="location" required >
+                            <option value="Your Location" disabled selected>Your Location</option>
+                            <option value="Warszawa">Warszawa</option>
+                            <option value="Gdańsk">Gdańsk</option>
+                            <option value="Poznań">Poznań</option>
+                            <option value="Londyn">Londyn</option>
+                        </select>    
+                    </div>
+                    <div class="form-template__element form-template__element--checkform">
+                        <label class="form-template__agreement">I have read and accept the terms of use.
+                            <input type="checkbox" class="form-template__checkbox">
+                            <span class="form-template__checkmark"></span>
+                        </label>
+                    </div>
+                    <input type="button" class="form-template__button" value="Sign Up" name="send">
+                    </form>      
             </div>
         </div>
-    </div>
+        
+        <div class="form-template">
+            <h1 class="form-template__header">Send Email</h1>
+            <div class="form-template__wrapper">
+                <form class="form-template__main">
+                    <div class="form-template__element">
+                        <div class="form-template__icon"><i class="fas fa-user"></i></div>
+                        <div class="form-template__separator"></div>
+                        <input class="form-template__field" type="text" placeholder="Your Name" name="name" required >
+                    </div>
+                    <div class="form-template__element">
+                        <div class="form-template__icon"><i class="fas fa-envelope"></i></div>
+                        <div class="form-template__separator"></div>
+                        <input class="form-template__field" type="text" placeholder="Your Email" name="email" required >
+                    </div>
+                    <textarea class="form-template__textarea" name="message" cols="20" rows="8" placeholder="Type your message..." required></textarea>
+                    
+                    <div class="form-template__element form-template__element--checkform">
+                        <label class="form-template__agreement">Send a copy to me
+                            <input type="checkbox" class="form-template__checkbox">
+                            <span class="form-template__checkmark"></span>
+                        </label>
+                    </div>
+                    <input type="button" class="form-template__button" value="Send Email" name="send">
+                    </form>      
+            </div>
+        </div>
+        <div class="form-template">
+                <h1 class="form-template__header">Sign in Form</h1>
+                <div class="form-template__wrapper">
+                    <form class="form-template__main">
+                        <div class="form-template__element">
+                            <div class="form-template__icon"><i class="fas fa-user"></i></div>
+                            <div class="form-template__separator"></div>
+                            <input class="form-template__field" type="text" placeholder="Username" name="name" required >
+                        </div>
+                        <div class="form-template__element">
+                            <div class="form-template__icon"><i class="fas fa-lock"></i></div>
+                            <div class="form-template__separator"></div>
+                            <input class="form-template__field" type="text" placeholder="Password" name="pass" required >
+                        </div>
+                        <div class="form-template__dblbtn">
+                            <div class="form-template__element form-template__element--checkform">
+                                <label class="form-template__agreement">Remember me
+                                    <input type="checkbox" class="form-template__checkbox">
+                                    <span class="form-template__checkmark"></span>
+                                </label>
+                            </div>
+                            <input type="submit" class="form-template__button form-template__button--small" value="Sign Up" name="send">
+                        </div>
+                    </form>      
+                </div>
+         </div>
+        <div class="form-template">
+                <h1 class="form-template__header">Recovder form</h1>
+                <div class="form-template__wrapper">
+                    <form class="form-template__main">
+                        <div class="form-template__element">
+                            <div class="form-template__icon"><i class="fas fa-user"></i></div>
+                            <div class="form-template__separator"></div>
+                            <input class="form-template__field" type="text" placeholder="Username" name="name" required >
+                        </div>
+                        <div class="form-template__element">
+                            <div class="form-template__icon"><i class="fas fa-lock"></i></div>
+                            <div class="form-template__separator"></div>
+                            <input class="form-template__field" type="text" placeholder="Password" name="pass" required >
+                        </div>
+                        <div class="form-template__dblbtn">
+                                <input type="submit" class="form-template__button form-template__button--small" value="Send" name="send">
+                                <input type="submit" class="form-template__button form-template__button--small form-template__button--small-disabled" disabled value="Done" name="send">
+                        </div>
+                    </form>      
+                </div>
+         </div>
+        <div class="form-template">
+                <h1 class="form-template__header">Subscrsibe Form</h1>
+                <div class="form-template__wrapper">
+                    <form class="form-template__main">
+                        <div class="form-template__element">
+                            <div class="form-template__icon"><i class="fas fa-envelope"></i></div>
+                            <div class="form-template__separator"></div>
+                            <input class="form-template__field" type="text" placeholder="Enter Your Email" name="name" required >
+                        </div>
+                        <div class="form-template__dblbtn">
+                                <input type="submit" class="form-template__button form-template__button--small" value="Subscribe" name="send">
+                                <input type="submit" class="form-template__button form-template__button--small form-template__button--small-danger" disabled value="No, Thanks" name="send">
+                        </div>
+                    </form>      
+                </div>
+         </div>
+         <div class="form-template">
+             <img src="img/dontuseit.png" alt="brandname" class="form-template__img">
+             <img src="img/website.png" alt="website" class="form-template__img form-template__img--url">
+         </div>
+        
+            
+    </section>
     
 </body>
 </html>
